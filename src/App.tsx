@@ -6,6 +6,7 @@ import { Container } from './components/container/index';
 import { Logo } from './components/logo';
 import { Menu } from './components/menu';
 import { CountDown } from './components/coutdown';
+import { DefaultInput } from './components/defautimput/index';
 
 export function App() {
   return (
@@ -25,8 +26,12 @@ export function App() {
       <Container>
         <form className='form' action=''>
           <div className='formRow'>
-            <label htmlFor='input'>task</label>
-            <input id='input' type='text' />
+            <DefaultInput
+              labelText='task'
+              id='meuInput'
+              type='text'
+              placeholder='Digite algo'
+            />
           </div>
 
           <div className='formRow'>
